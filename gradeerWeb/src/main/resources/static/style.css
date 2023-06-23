@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e7e5e4;
+}
+
+#brand-name {
+    font-size: 40px;
+    color: #d4d4d4;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+

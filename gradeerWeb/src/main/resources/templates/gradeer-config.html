@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to GradeerWeb</title>
+  <!--    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <span id="brand-name">GradeerWeb</span>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="container">
+  <h1 style="text-align: center">Grading Configuration</h1>
+  <form style="margin-bottom: 100px">
+    <div class="form-group">
+      <label for="studentSolutionDirPath">Student Solution Directory Path:</label>
+      <input type="text" class="form-control" id="studentSolutionDirPath" placeholder="Directory path to the the student solutions">
+    </div>
+    <div class="form-group">
+      <label for="outputDirPath">Output Directory Path:</label>
+      <input type="text" class="form-control" id="outputDirPath" placeholder="Directory path for outputting">
+    </div>
+    <div class="form-group">
+      <label for="modelSolutionsDirPath">Model Solutions Directory Path:</label>
+      <input type="text" class="form-control" id="modelSolutionsDirPath" placeholder="Directory path to the model solutions">
+    </div>
+    <div class="form-group">
+      <label for="testDirPath">Tests Directory Path:</label>
+      <input type="text" class="form-control" id="testDirPath" placeholder="Directory path to the tests">
+    </div>
+    <div class="form-group">
+      <label for="junitVersion">JUnit Version (must be capitalised, and in a form like "JUNIT4"):</label>
+      <input type="text" class="form-control" id="junitVersion" placeholder="Example: JUNIT4">
+    </div>
+    <div class="form-group form-check">
+      <input type="checkbox" class="form-check-input" id="forceRecompilation" checked>
+      <label class="form-check-label" for="forceRecompilation">Force Recompilation</label>
+    </div>
+    <div class="form-group">
+      <label for="sourceDependenciesDirPath">Source Dependencies Directory Path:</label>
+      <input type="text" class="form-control" id="sourceDependenciesDirPath" placeholder="Directory path to the source dependencies">
+    </div>
+    <div class="form-group">
+      <label for="runtimeDependenciesDirPath">Runtime Dependencies Directory Path:</label>
+      <input type="text" class="form-control" id="runtimeDependenciesDirPath" placeholder="Directory path to the runtime dependencies">
+    </div>
+    <div class="form-group">
+      <label for="checkJSONs">Name of the JSON check file (only 1 check file is allowed):</label>
+      <input type="text" class="form-control" id="checkJSONs" placeholder="Name of the JSON check file">
+    </div>
+    <div class="form-group">
+      <label for="perTestSuiteTimeout">Per Test Suite Timeout:</label>
+      <input type="text" class="form-control" id="perTestSuiteTimeout" placeholder="Enter a number">
+    </div>
+    <div class="form-group">
+      <label for="tabWidth">Tab Width:</label>
+      <input type="text" class="form-control" id="tabWidth" placeholder="Enter a number">
+    </div>
+    <p style="font-size: 24px; margin-top: 60px"><strong>Pre Manual Java Class To Execute</strong></p>
+    <div class="form-group">
+      <label for="fullClassName">Full Class Name:</label>
+      <input type="text" class="form-control" id="fullClassName" placeholder="Full Class Name">
+    </div>
+    <div class="form-group">
+      <label for="args">Arguments:</label>
+      <input type="text" class="form-control" id="args" placeholder="Arguments">
+    </div>
+    <div class="form-group">
+      <label for="addtionalCPElems">Additional CP Elements:</label>
+      <input type="text" class="form-control" id="addtionalCPElems" placeholder="Additional CP Elements">
+    </div>
+    <div class="form-group">
+      <label for="waitAfterExecutionTime">Wait After Execution Time:</label>
+      <input type="text" class="form-control" id="waitAfterExecutionTime" placeholder="Enter a number">
+    </div>
+    <div class="form-group">
+      <label for="inspectCommand">Inspect Command:</label>
+      <input type="text" class="form-control" id="inspectCommand" placeholder="Inspect Command">
+    </div>
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+</main>
+</body>
+</html>

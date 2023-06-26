@@ -55,6 +55,13 @@
 			<groupId>org.webjars</groupId>
 			<artifactId>webjars-locator-core</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>gradeer-1.00a2-jar-with-dependencies</groupId>
+			<artifactId>gradeer-1.00a2-jar-with-dependencies</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${project.basedir}/src/main/resources/gradeer-1.00a2-jar-with-dependencies.jar</systemPath>
+		</dependency>
 	</dependencies>
 
 	<build>
